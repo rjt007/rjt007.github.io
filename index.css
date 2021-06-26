@@ -8,16 +8,16 @@
 }
 /* styling navbar */
 .navbar{
-    width:100vw;
-    height: 8vh;
+    width:100%;
+    height:50px;
 }
 .menubar{
-    width:100vw;
-    height: 8vh;
+    width:100%;
+    height:50px;
     background-color:rgb(78, 76, 76);
     position: fixed;
     text-align: center;
-    padding-top: 2.5vh;
+    padding-top:15px;
     z-index: 1;
 }
 .menubar li{
@@ -31,25 +31,95 @@
     color:crimson;
 }
 .bg-pic{
-    width: 100vw;
-    height: 92vh;
+    width: 100%;
+    height:605px;
+    position: relative;
     background-image: url("img/coding.webp");
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.8;
 }
 .bg-color{
-    width:100vw;
-    height: 92vh;
+    width:100%;
+    height: 605px;
     background-color:rgba(3, 66, 107, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-content{
     color: white;
     text-align: center;
-    padding-top: 20vh;
-    font-size:3.5vw;
+    font-size:45px;
 }
-.home-content .hello-txt{
-    font-size: 6vw;
+.home-content .name-txt{
+    font-size: 75px;
     text-transform: uppercase;
+}
+.resume-btn{
+    min-height: 50px;
+    min-width: 140px;
+    font-size: large;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: rgba(3, 66, 107, 0.8);
+    color: white;
+}
+.resume-btn:hover{
+    background-color: white;
+    color: rgba(3, 66, 107);
+    cursor: pointer;
+}
+.downcircle{
+    position: relative;
+    top:130px;
+}
+.about-txt{
+    background-color: rgb(78, 76, 76);
+    color: white;
+    width: 100%;
+    height: auto;
+    padding-top:20px;
+    text-align: center;
+    font-weight: normal;
+}
+.about{
+    width:100%;
+    height: auto;
+    background-color:rgb(78, 76, 76);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.abt-pic{
+    width:310px;
+    height: 310px;
+    background-image: url(img/myimage.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-top: 100px;
+    margin-left: 60px;
+    border: 2px solid white;
+    border-radius:200px;
+}
+.abt-txt{
+    width:600px;
+    height:400px;
+    margin-right: 120px;
+    color: white;
+    margin-top: 75px;
+    padding-top: 60px;
+}
+@media screen and (max-width:1200px){
+    .abt-pic{
+        margin: auto;
+        margin-top: 40px;
+    }
+    .abt-txt{
+        margin: auto;
+    }
+    .downcircle{
+        top:100px;
+    }
 }
