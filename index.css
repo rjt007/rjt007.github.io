@@ -73,6 +73,7 @@
 .downcircle{
     position: relative;
     top:130px;
+    color: white;
 }
 .about-txt{
     background-color: rgb(78, 76, 76);
@@ -83,7 +84,7 @@
     text-align: center;
     font-weight: normal;
 }
-.about{
+.abt{
     width:100%;
     height: auto;
     background-color:rgb(78, 76, 76);
@@ -111,6 +112,39 @@
     margin-top: 75px;
     padding-top: 60px;
 }
+.edu{
+    width:100%;
+    height:620px;
+    background-color:#005f73;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edu-txt{
+    color: white;
+    padding-top:20px;
+    text-align: center;
+    font-weight: normal;
+}
+.clg-edu, .seniorsec-edu, .sec-edu{
+    height:140px;
+    width:650px;
+    margin-top: 30px;
+    border:2px solid #e9d8a6;
+    color: white;
+    padding-top:12px;
+    padding-left: 10px;
+}
+.edu-date{
+    padding-left: 465px;
+    padding-top: 10px;
+}
+.clg-edu p, .seniorsec-edu p, .sec-edu p{
+    padding-top: 22px;
+}
+.clg-edu h4, .seniorsec-edu h4, .sec-edu h4{
+    padding-top: 15px;
+}
 @media screen and (max-width:1200px){
     .abt-pic{
         margin: auto;
@@ -120,6 +154,62 @@
         margin: auto;
     }
     .downcircle{
-        top:100px;
+        top:120px;
+    }
+}
+@media  screen and (max-width:700px) {
+    .home-content{
+        font-size:35px;
+    }
+    .resume-btn{
+        margin-top: 20px;
+    }
+    .abt{
+        height:850px;
+    }
+    .abt-pic{
+        margin: auto;
+        margin-top: 40px;
+    }
+    .abt-txt{
+        margin: auto;
+        padding-left: 5px;
+        padding-inline-end: 5px;
+    }
+    .downcircle{
+        display: none;
+    }
+    /*--------------------------------------------------*/
+    .edu{
+        width: auto;
+    }
+    .clg-edu, .seniorsec-edu, .sec-edu{
+        width:400px;
+        height: auto;
+    }
+    .edu-date{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .home-content{
+        font-size:30px;
+    }
+    .resume-btn{
+        margin-top: 20px;
+    }
+    .edu{
+        width: auto;
+        height: 800px;
+    }
+    .clg-edu, .seniorsec-edu, .sec-edu{
+        width:300px;
+        height: auto;
+    }
+    .edu-date{
+        padding-left: 0px;
+        padding-top: 10px;
     }
 }
