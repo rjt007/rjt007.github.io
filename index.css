@@ -82,6 +82,7 @@
 }
 
 /* Styling About */
+
 .abt{
     display: flex;
     flex-direction: column;
@@ -170,13 +171,13 @@
 
 .skills{
     width: 100%;
-    height: 80vh;
-    background-image: url("img/skill.webp");
+    height: 60vh;
+    background-color: rgb(78, 76, 76);
     background-repeat: no-repeat;
     background-size:cover;
 }
 .grid{
-    margin: 140px 20px 0px 20px;
+    margin: 80px 20px 0px 20px;
     display: grid;
     grid-template-columns: repeat(5,auto);    
     grid-row-gap:8px;
@@ -192,6 +193,61 @@
     margin-right: 2.5px;
     padding: 10px;
     text-align: center;
+}
+
+/*Styling Experience*/
+
+.exp-txt{
+    color: white;
+    font-weight:normal;
+    text-align: center;
+    padding-top:30px;
+}
+.experience{
+    width:100%;
+    height: 150vh;
+    background-color:#005f73;
+}
+.exp-container{
+    width:100%;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 25px;
+}
+.map{
+    color: white;
+    font-size:50px;
+}
+.map-line{
+    background-color:white;
+    width:3px;
+    border-radius: 5px;
+    position: relative;
+    top:47px;
+    right:20px;
+    height: 26vh;
+}
+.exp-content{
+    background-color: white;
+    color:rgb(78, 76, 76);
+    width: 50vw;
+    height:22vh;
+    position: relative;
+    left:40px;
+    top:15px;
+    padding: 8px 12px 8px 12px;
+}
+.exp-container h3{
+    color: rgb(41, 39, 39);
+    margin-top: 3.5px;
+}
+.exp-container h4{
+    margin-top: 10px;
+}
+.exp-container p{
+    margin-top: 10px;
 }
 
 /* Media Query Responsivness */
@@ -211,8 +267,17 @@
     }
     /*--------------*/
     .grid{
-        grid-template-columns: repeat(3,auto);
-        margin-top: 160px;   
+        grid-template-columns: repeat(4,auto);
+        /* margin-top: 60px;   */
+    }
+}
+@media  screen and (max-width:800px) {
+    .grid{
+        grid-template-columns: repeat(4,auto);
+        /* margin-top: 60px;   */
+    }
+    .skill{
+        font-size: medium;
     }
 }
 @media  screen and (max-width:700px) {
@@ -253,7 +318,7 @@
     /*--------------------------------*/
     .grid{
         grid-template-columns: repeat(4,auto);
-        margin-top: 160px;   
+        margin-top: 60px;   
     }
     .skill{
         font-size: medium;
@@ -282,9 +347,40 @@
     /*--------------*/
     .grid{
         grid-template-columns: repeat(3,auto);
-        margin-top: 160px;   
+        margin-top: 60px;   
     }
     .skill{
         font-size: medium;
+    }
+}
+@media screen and (max-width:1110px)
+{
+    .exp-content{
+        width: 60vw;
+        height: 25vh;
+    }
+}
+@media screen and (max-width:740px) {
+    .exp-content{
+        width: 70vw;
+        height: 27vh;
+    }
+}
+@media screen and (max-width:550px){
+    .exp-content{
+        width: 55vw;
+        height: 30vh;
+    }
+    .exp-container p{
+        font-size: small;
+    }
+    .exp-container h3{
+        font-size: small;
+    }
+    .exp-container h4{
+        font-size: small;
+    }
+    .exp-container p{
+        margin-top: 7px;
     }
 }
