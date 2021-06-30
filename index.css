@@ -239,17 +239,76 @@
     top:15px;
     padding: 8px 12px 8px 12px;
 }
-.exp-container h3{
+.exp-content h3{
     color: rgb(41, 39, 39);
     margin-top: 3.5px;
 }
-.exp-container h4{
+.exp-content h4{
     margin-top: 10px;
 }
-.exp-container p{
+.exp-content p{
     margin-top: 10px;
 }
 
+/*Styling Projects*/
+.project-txt{
+    color: white;
+    font-weight:normal;
+    text-align: center;
+    padding-top:30px;
+}
+.projects{
+    width:100%;
+    height: 188vh;
+    background-color:rgb(78, 76, 76);
+}
+.project-container{
+    width:100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 25px;
+}
+.map1{
+    color:white;
+    font-size:50px;
+}
+.map1-line{
+    background-color:white;
+    width:3px;
+    border-radius: 5px;
+    position: relative;
+    top:47px;
+    right:20px;
+    height: 28vh;
+}
+.project-content{
+    background-color: white;
+    color:rgb(78, 76, 76);
+    width: 50vw;
+    height:26vh;
+    position: relative;
+    left:40px;
+    top:15px;
+    padding: 8px 12px 8px 12px;
+}
+.project-content h3{
+    color: rgb(41, 39, 39);
+    margin-top: 3.5px;
+}
+.project-content h4{
+    margin-top: 10px;
+}
+.project-content p{
+    margin-top: 10px;
+}
+.project-content a{
+    color:rgb(56, 117, 230);
+}
+.project-content a:hover{
+    color:crimson;
+}
 /* Media Query Responsivness */
 
 @media screen and (max-height:500px) {
@@ -268,14 +327,9 @@
     /*--------------*/
     .grid{
         grid-template-columns: repeat(4,auto);
-        /* margin-top: 60px;   */
     }
 }
 @media  screen and (max-width:800px) {
-    .grid{
-        grid-template-columns: repeat(4,auto);
-        /* margin-top: 60px;   */
-    }
     .skill{
         font-size: medium;
     }
@@ -320,9 +374,6 @@
         grid-template-columns: repeat(4,auto);
         margin-top: 60px;   
     }
-    .skill{
-        font-size: medium;
-    }
 }
 @media screen and (max-width:400px) {
     .home-content{
@@ -353,11 +404,21 @@
         font-size: medium;
     }
 }
+
+/* Media Query on Experience and Project Section*/
+
 @media screen and (max-width:1110px)
 {
     .exp-content{
         width: 60vw;
-        height: 25vh;
+        height: 24vh;
+    }
+    .project-content{
+        width:60vw;
+        height: 26vh;
+    }
+    .project-speech{
+        height: 28vh;
     }
 }
 @media screen and (max-width:740px) {
@@ -365,22 +426,28 @@
         width: 70vw;
         height: 27vh;
     }
+    .project-content{
+        width:75vw;
+        height: 28vh;
+    }
+    .project-speech{
+        height: 29vh;
+    }
 }
 @media screen and (max-width:550px){
-    .exp-content{
+    .exp-content, .project-content{
         width: 55vw;
         height: 30vh;
     }
-    .exp-container p{
-        font-size: small;
+    .project-speech, .project-netflix{
+        height: 32vh;
     }
-    .exp-container h3{
-        font-size: small;
+    .exp-content h3, .project-content h3{
+        font-size: medium;
     }
-    .exp-container h4{
+    .exp-content p,.exp-content h4, .project-content p, .project-content h4{
         font-size: small;
-    }
-    .exp-container p{
-        margin-top: 7px;
+        margin-top: 5px;
     }
 }
+/*--------------------------*/
