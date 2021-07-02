@@ -16,7 +16,7 @@
 .menubar{
     width:100%;
     height:50px;
-    background-color:rgb(78, 76, 76);
+    background-color:#073b4c;
     position: fixed;
     text-align: center;
     padding-top:15px;
@@ -304,9 +304,105 @@
     margin-top: 10px;
 }
 .project-content a{
-    color:rgb(56, 117, 230);
+    color:#005f73;
 }
 .project-content a:hover{
+    color:crimson;
+}
+
+/* Styling Contact */
+
+.contact{
+    width: 100%;
+    height:80vh;
+    background-color:#005f73;
+    position: relative;
+}
+.contact-txt{
+    color: white;
+    font-weight:normal;
+    text-align: center;
+    padding-top:30px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vh;
+}
+.contact-container ::placeholder{
+    color:rgb(78, 76, 76);
+    font-size: medium;
+}
+.inp-name-email{
+    margin-top: 20px;
+    width:500px;
+    height:40px;
+    outline: none;
+    border: 2px solid white;
+    border-radius:4px;
+    font-size: medium;
+    padding-left: 5px;
+}
+.inp-msg{
+    margin-top: 20px;
+    width:500px;
+    height: 150px;
+    outline: none;
+    border: 2px solid white;
+    border-radius:4px;
+    font-size: medium;
+    padding-left:5px;
+}
+.send-btn{
+    margin-top: 4vh;
+    width:100px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius:4px;
+    font-size: medium;
+    color:rgb(78, 76, 76);
+    background-color: white;
+}
+.send-btn:hover{
+    background-color:crimson;
+    color:white;
+    border-color: crimson;
+}
+
+/* Styling Footer */
+
+.footer
+{
+    width:100%;
+    height:8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#073b4c;
+}
+.footer h3{
+    color: white;
+    padding-left: 10px;
+}
+.upcircle{
+    padding-right: 120px;
+    font-size: 30px;
+    color: white;
+}
+.socio-icon{
+    width:200px;
+    height: 6vh;
+    text-align: center;
+}
+.socio-icon a{
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+}
+.footer a:hover{
     color:crimson;
 }
 /* Media Query Responsivness */
@@ -373,6 +469,18 @@
     .grid{
         grid-template-columns: repeat(4,auto);
         margin-top: 60px;   
+    }
+    /*--------------------------------*/
+    .footer{
+        height: 17vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .upcircle, .socio-icon{
+        padding-right: 0px;
+        padding-top: 7px;
+        align-self: center;
     }
 }
 @media screen and (max-width:400px) {
@@ -448,6 +556,10 @@
     .exp-content p,.exp-content h4, .project-content p, .project-content h4{
         font-size: small;
         margin-top: 5px;
+    }
+    /*----------------------------------*/
+    .inp-name-email, .inp-msg{
+        width:340px;
     }
 }
 /*--------------------------*/
