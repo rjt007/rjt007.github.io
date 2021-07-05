@@ -37,7 +37,8 @@
 
 .bg-pic{
     width: 100%;
-    height:100vh;
+    /* height:100vh; */
+    height:660px;
     position: relative;
     background-image: url("img/coding.webp");
     background-repeat: no-repeat;
@@ -46,7 +47,7 @@
 }
 .bg-color{
     width:100%;
-    height:100vh;
+    height:660px;
     background-color:rgba(3, 66, 107, 0.8);
     display: flex;
     justify-content: center;
@@ -77,10 +78,12 @@
 }
 .downcircle{
     position: relative;
-    top:115px;
+    top:125px;
     color: white;
 }
-
+.downcircle:hover{
+    color:crimson;
+}
 /* Styling About */
 
 .abt{
@@ -140,24 +143,33 @@
     text-align: center;
     font-weight: normal;
 }
-.clg-edu, .seniorsec-edu, .sec-edu{
-    height:140px;
+.edu-terms{
+    height:145px;
     width:650px;
     margin-top: 30px;
-    border:2px solid #e9d8a6;
+    border:2px solid rgb(78, 76, 76);
+    border-radius: 5px;
     color: white;
     padding-top:12px;
     padding-left: 10px;
+    background-color: rgb(78, 76, 76);
 }
 .edu-date{
     padding-left: 465px;
     padding-top: 10px;
 }
-.clg-edu p, .seniorsec-edu p, .sec-edu p{
+.edu-terms p{
     padding-top: 22px;
 }
-.clg-edu h4, .seniorsec-edu h4, .sec-edu h4{
+.edu-terms h4{
     padding-top: 15px;
+}
+.edu-terms:hover{
+    background-color: crimson;
+    border-color: crimson;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 /* Styling Skills */
@@ -171,7 +183,7 @@
 
 .skills{
     width: 100%;
-    height: 60vh;
+    height:400px;
     background-color: rgb(78, 76, 76);
     background-repeat: no-repeat;
     background-size:cover;
@@ -194,6 +206,13 @@
     padding: 10px;
     text-align: center;
 }
+.skill:hover{
+    background-color:#370617;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
 /*Styling Experience*/
 
@@ -205,39 +224,47 @@
 }
 .experience{
     width:100%;
-    height: 150vh;
+    height: 1000px;
     background-color:#005f73;
 }
 .exp-container{
     width:100%;
-    height: 28vh;
+    height: 190px;
     display: flex;
     justify-content: center;
     position: relative;
     margin-top: 25px;
 }
 .map{
-    color: white;
+    color: #b4b4b4;
     font-size:50px;
 }
 .map-line{
-    background-color:white;
+    background-color:#b4b4b4;
     width:3px;
     border-radius: 5px;
     position: relative;
     top:47px;
     right:20px;
-    height: 26vh;
+    height:170px;
 }
 .exp-content{
-    background-color: white;
+    background-color:#b4b4b4;
     color:rgb(78, 76, 76);
     width: 50vw;
-    height:22vh;
+    height: 180px;
     position: relative;
     left:40px;
     top:15px;
     padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+}
+.exp-content:hover{
+    background-color:rgb(238, 119, 39);
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .exp-content h3{
     color: rgb(41, 39, 39);
@@ -259,39 +286,47 @@
 }
 .projects{
     width:100%;
-    height: 188vh;
+    height:1540px;
     background-color:rgb(78, 76, 76);
 }
 .project-container{
     width:100%;
-    height: 30vh;
+    height:235px;
     display: flex;
     justify-content: center;
     position: relative;
     margin-top: 25px;
 }
 .map1{
-    color:white;
+    color:rgb(46, 197, 187);
     font-size:50px;
 }
 .map1-line{
-    background-color:white;
+    background-color:rgb(46, 197, 187);
     width:3px;
     border-radius: 5px;
     position: relative;
     top:47px;
     right:20px;
-    height: 28vh;
+    height: 215px;
 }
 .project-content{
-    background-color: white;
+    background-color:rgb(46, 197, 187);
     color:rgb(78, 76, 76);
     width: 50vw;
-    height:26vh;
+    height: 210px;
     position: relative;
     left:40px;
     top:15px;
     padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+}
+.project-content:hover{
+    background-color: crimson;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .project-content h3{
     color: rgb(41, 39, 39);
@@ -303,18 +338,32 @@
 .project-content p{
     margin-top: 10px;
 }
-.project-content a{
-    color:#005f73;
+.eye{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:28px;
 }
-.project-content a:hover{
-    color:crimson;
+.eye-btn{
+    background-color:white;
+    color:rgb(78, 76, 76);
+    border: 2px solid black;
+    border-radius: 20px;
+    width:120px;
+    height: 40px;
+    font-size:small;
+}
+.eye-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 /* Styling Contact */
 
 .contact{
     width: 100%;
-    height:80vh;
+    height: 500px;
     background-color:#005f73;
     position: relative;
 }
@@ -329,7 +378,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    height:400px;
     margin-top: 5vh;
 }
 .contact-container ::placeholder{
@@ -377,7 +426,7 @@
 .footer
 {
     width:100%;
-    height:8vh;
+    height:60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -394,7 +443,7 @@
 }
 .socio-icon{
     width:200px;
-    height: 6vh;
+    height:40px;
     text-align: center;
 }
 .socio-icon a{
@@ -404,6 +453,7 @@
 }
 .footer a:hover{
     color:crimson;
+    cursor: pointer;
 }
 /* Media Query Responsivness */
 
@@ -457,7 +507,7 @@
     .edu{
         width: auto;
     }
-    .clg-edu, .seniorsec-edu, .sec-edu{
+    .edu-terms{
         width:400px;
         height: auto;
     }
@@ -472,7 +522,7 @@
     }
     /*--------------------------------*/
     .footer{
-        height: 17vh;
+        height: 120px;
         flex-direction: column;
         align-items: center;
         justify-content:center;
@@ -495,7 +545,7 @@
         width: auto;
         height: 800px;
     }
-    .clg-edu, .seniorsec-edu, .sec-edu{
+    .edu-terms{
         width:300px;
         height: auto;
     }
@@ -519,36 +569,25 @@
 {
     .exp-content{
         width: 60vw;
-        height: 24vh;
-    }
-    .project-content{
-        width:60vw;
-        height: 26vh;
-    }
-    .project-speech{
-        height: 28vh;
+        height: 190px;
     }
 }
-@media screen and (max-width:740px) {
+@media screen and (max-width:900px) {
     .exp-content{
         width: 70vw;
-        height: 27vh;
-    }
-    .project-content{
-        width:75vw;
-        height: 28vh;
-    }
-    .project-speech{
-        height: 29vh;
+        height:200px;
     }
 }
-@media screen and (max-width:550px){
-    .exp-content, .project-content{
-        width: 55vw;
-        height: 30vh;
+@media screen and (max-width:1000px) {
+    .project-content{
+        width:62vw;
+        height: 230px;
     }
-    .project-speech, .project-netflix{
-        height: 32vh;
+}
+@media screen and (max-width:620px){
+    .exp-content{
+        width: 55vw;
+        height: 190px;
     }
     .exp-content h3, .project-content h3{
         font-size: medium;
@@ -557,9 +596,26 @@
         font-size: small;
         margin-top: 5px;
     }
+    .project-content{
+        width:62vw;
+        height: 210px;
+    }
     /*----------------------------------*/
     .inp-name-email, .inp-msg{
         width:340px;
+    }
+}
+@media screen and (max-width:450px){
+    .exp-content{
+        width: 60vw;
+        height: 205px;
+    }
+    .project-content{
+        width:62vw;
+        height: 250px;
+    }
+    .eye{
+        top:20px;
     }
 }
 /*--------------------------*/
