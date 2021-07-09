@@ -27,7 +27,7 @@ let currentPhrase = [];
 let isDeleting = false;
 let isEnd = false;
 const normalSpeed = Math.random() * (250 -200) + 200;
-const deletionSpeed = Math.random()*(500-450)+450;
+const deletionSpeed = Math.random()*(600-550)+550;
 function loop () {
   isEnd = false;
   textDisplay.innerHTML = currentPhrase.join('');
@@ -67,24 +67,23 @@ loop();
 //
 
 //Color Change in Text-Change
-const textcolor = document.getElementById('my-name');
-const btncolor = document.getElementById('btn-border');
-colour = ["white","crimson","pink","red","yellow","black","chocolate","gold","coral"];
+const downcircle = document.getElementById('down-circle');
+const normalspeed = Math.random() * (1000 -950) + 950;
+colour = ["white","black"];
 const l = colour.length;
 let k=0;
 function colorChange()
 {
     if(k<l)
     {
-        textDisplay.style.color=colour[k];
-        textcolor.style.color=colour[k];
+        downcircle.style.color=colour[k];
         k++;
     }
     if(k==l)
     {
         k=0;
     }
-    setTimeout(colorChange,normalSpeed);
+    setTimeout(colorChange,normalspeed);
 }
 colorChange();
 //

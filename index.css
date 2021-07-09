@@ -86,7 +86,6 @@
 
 .bg-pic{
     width: 100%;
-    /* height:100vh; */
     height:660px;
     position: relative;
     background-image: url("img/coding.webp");
@@ -132,9 +131,9 @@
     animation:circlesize 1.5s infinite;
 }
 .downcircle:hover{
-    color:crimson;
     animation: none;
 }
+
 /* Styling About */
 
 .abt{
@@ -183,7 +182,7 @@
 .edu{
     width:100%;
     height:620px;
-    background-color:#005f73;
+    background-color:rgb(92, 91, 91);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,6 +203,7 @@
     padding-top:12px;
     padding-left: 10px;
     background-color: rgb(78, 76, 76);
+    box-shadow:10px 5px 5px black;
 }
 .edu-date{
     padding-left: 465px;
@@ -216,8 +216,8 @@
     padding-top: 15px;
 }
 .edu-terms:hover{
-    background-color: crimson;
-    border-color: crimson;
+    background-color: rgb(19, 14, 14);
+    border-color: rgb(19, 14, 14);
     transform: scale(1.05);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -249,6 +249,7 @@
 }
 .skill{
     background-color:rgba(253, 246, 246, 0.7);
+    box-shadow: 10px 5px 5px black;
     color: #0c2327;
     border-radius: 12px;
     font-size:25px;
@@ -276,7 +277,7 @@
 .experience{
     width:100%;
     height: 1000px;
-    background-color:#005f73;
+    background-color:rgb(92, 91, 91);
 }
 .exp-container{
     width:100%;
@@ -287,11 +288,11 @@
     margin-top: 25px;
 }
 .map{
-    color: #b4b4b4;
+    color: white;
     font-size:50px;
 }
 .map-line{
-    background-color:#b4b4b4;
+    background-color:white;
     width:3px;
     border-radius: 5px;
     position: relative;
@@ -300,8 +301,9 @@
     height:170px;
 }
 .exp-content{
-    background-color:#b4b4b4;
-    color:rgb(78, 76, 76);
+    background-color: rgb(78, 76, 76);
+    box-shadow: 10px 5px 5px black;
+    color:white;
     width: 50vw;
     height: 180px;
     position: relative;
@@ -311,14 +313,14 @@
     border-radius: 10px;
 }
 .exp-content:hover{
-    background-color:rgb(238, 119, 39);
+    background-color:rgb(53, 22, 22);
     color: white;
     transform: scale(1.05);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .exp-content h3{
-    color: rgb(41, 39, 39);
+    color:white;
     margin-top: 3.5px;
 }
 .exp-content h4{
@@ -329,6 +331,7 @@
 }
 
 /*Styling Projects*/
+
 .project-txt{
     color: white;
     font-weight:normal;
@@ -349,11 +352,11 @@
     margin-top: 25px;
 }
 .map1{
-    color:rgb(46, 197, 187);
+    color:rgb(209, 195, 195);;
     font-size:50px;
 }
 .map1-line{
-    background-color:rgb(46, 197, 187);
+    background-color:rgb(209, 195, 195);
     width:3px;
     border-radius: 5px;
     position: relative;
@@ -362,8 +365,9 @@
     height: 215px;
 }
 .project-content{
-    background-color:rgb(46, 197, 187);
-    color:rgb(78, 76, 76);
+    background-color:rgb(209, 195, 195);
+    box-shadow: 10px 5px 5px black;
+    color: black;
     width: 50vw;
     height: 210px;
     position: relative;
@@ -373,14 +377,13 @@
     border-radius: 10px;
 }
 .project-content:hover{
-    background-color: crimson;
-    color: white;
+    background-color: rgb(235, 108, 108);
     transform: scale(1.05);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .project-content h3{
-    color: rgb(41, 39, 39);
+    color: black;
     margin-top: 3.5px;
 }
 .project-content h4{
@@ -396,8 +399,8 @@
     top:28px;
 }
 .eye-btn{
-    background-color:white;
-    color:rgb(78, 76, 76);
+    background-color:black;
+    color:white;
     border: 2px solid black;
     border-radius: 20px;
     width:120px;
@@ -405,8 +408,8 @@
     font-size:small;
 }
 .eye-btn:hover{
-    background-color: black;
-    color: white;
+    background-color:rgb(78, 76, 76);
+    border-color: rgb(78, 76, 76);
     cursor: pointer;
 }
 
@@ -565,7 +568,7 @@
         padding-left: 5px;
         padding-inline-end: 5px;
     }
-    /*--------------------------------------------------*/
+    /*-------------------------------*/
     .edu{
         width: auto;
     }
@@ -682,7 +685,7 @@
 }
 /*--------------------------*/
 
-/* Animation for Circles */
+/* Animation for DownCircle */
 @keyframes circlesize {
     0%{
         font-size: 15px;
