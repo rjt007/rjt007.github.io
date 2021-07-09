@@ -12,26 +12,74 @@
 .navbar{
     width:100%;
     height:50px;
-}
-.menubar{
-    width:100%;
-    height:50px;
-    background-color:#073b4c;
+    background-color: #073b4c;
+    display: flex;
+    justify-content:center;
     position: fixed;
-    text-align: center;
-    padding-top:15px;
-    z-index: 1;
+    z-index: 2; 
 }
-.menubar li{
-    display: inline-block;
-    margin: 0 2vh 0 2vh;
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
 }
-.menubar li a{
+.navbar ul a{
     color: white;
 }
-.menubar li a:hover{
+.navbar ul a:hover{
     color:crimson;
 }
+.navbar ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.burger-icon{
+    width:35px;
+    height: 35px;
+    align-self: center;
+    margin-left: 15px;
+    display: none;
+}
+.burger-icon{
+    cursor: pointer;
+}
+
+.side-menu{
+    width:180px;
+    height:650px;
+    background-color:black;
+    opacity: 0.8;
+    color: white;
+    z-index: 1;
+    position: fixed;
+    display: none;
+}
+.side-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 60px;
+}
+.side-menu ul a{
+    color: white;
+}
+.side-menu ul a:hover{
+    color:greenyellow;
+}
+.btn-close{
+    color: white;
+    font-size: 25px;
+}
+#btnclose:hover{
+    color:red;
+}
+.side-menu ul li{
+    margin-top: 35px;
+    color: white;
+}   
 
 /* Styling Home */
 
@@ -78,7 +126,7 @@
 }
 .downcircle{
     position: relative;
-    top:125px;
+    top:160px;
     color: white;
     animation:circlesize 1.5s infinite;
 }
@@ -479,6 +527,16 @@
     }
 }
 @media  screen and (max-width:800px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .burger-icon{
+        display:inline-block;
+    }
+    /*--------*/
     .skill{
         font-size: medium;
     }

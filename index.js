@@ -1,7 +1,22 @@
+
+//BURGER-MENU
+let burgerIcon = document.getElementById('brgr-icon');
+let sideMenu = document.getElementById('mobile-menu');
+let btnclose = document.getElementById('btnclose');
+burgerIcon.addEventListener('click',()=>{
+    sideMenu.style.display="inline-block";
+})
+btnclose.addEventListener('click', ()=>{
+    sideMenu.style.display="none";
+})
+//
+
+//CONTACT-FORM
 function send()
 {
     window.alert("Send Sucessfully!!");
 }
+//
 
 //TEXT-ANIMATION
 const textDisplay = document.getElementById('nm-txt');
@@ -72,3 +87,4 @@ function colorChange()
     setTimeout(colorChange,normalSpeed);
 }
 colorChange();
+//
